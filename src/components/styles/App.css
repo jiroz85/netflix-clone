@@ -1,0 +1,29 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://images.pexels.com/photos/7991370/pexels-photo-7991370.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+
+

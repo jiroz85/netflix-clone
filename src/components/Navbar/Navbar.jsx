@@ -1,4 +1,6 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <header className="navbar">
@@ -6,7 +8,9 @@ function Navbar() {
         <div className="navbar-logo">NETFLIX</div>
       </div>
       <div className="navbar-right">
-        <button className="navbar-signin">Sign In</button>
+        <Link to="/login" className="navbar-signin">
+          Sign In
+        </Link>
       </div>
     </header>
   );

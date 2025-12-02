@@ -1,18 +1,125 @@
- * {
+/* App.css */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  /* Color Variables */
+  --netflix-red: #e50914;
+  --netflix-black: #000000;
+  --netflix-dark-gray: #141414;
+  --netflix-light-gray: #757575;
+  --netflix-white: #ffffff;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Breakpoints */
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --large-desktop: 1200px;
+}
+
+/* Base Typography */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--netflix-black);
+  color: var(--netflix-white);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App {
-  min-height: 100vh;
-  background-color: #000;
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--netflix-red);
+  color: var(--netflix-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #f40612;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: var(--spacing-sm); }
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mt-2 { margin-top: var(--spacing-md); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 13px; }
+  
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+}

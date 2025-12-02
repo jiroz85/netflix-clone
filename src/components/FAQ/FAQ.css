@@ -1,0 +1,73 @@
+.faq-container {
+  padding: 2.5rem 1.5%;
+  background: #000;
+  color: #fff;
+  text-align: left;
+  /* Remove both border lines */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.faq-title {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  max-width: 1000px;  /* Increased max width for title */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-list {
+  max-width: 1000px;  /* Increased from 815px to make it wider */
+  margin: 0 auto;
+  padding: 0 10px;  /* Reduced side padding to gain more space */
+}
+
+/* Rest of your existing CSS remains the same */
+.faq-item {
+  margin-bottom: 8px;
+  width: 100%;
+  color: #fff;
+  background: #2d2d2d;
+  border: none;
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;  /* Slightly larger font for better readability */
+  font-weight: 400;
+  background: #2d2d2d;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faq-question:hover {
+  background: #3e3e3e;
+}
+
+.faq-icon {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-left: 1rem;  /* Add some spacing between text and icon */
+}
+
+.faq-answer {
+  background: #2d2d2d;
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 1.5rem;  /* Slightly larger font for better readability */
+  font-weight: 400;
+  line-height: 1.5;
+  border-top: 1px solid #000;
+}
+
+/* Rest of your responsive styles... */

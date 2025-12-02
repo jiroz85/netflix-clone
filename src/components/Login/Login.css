@@ -1,7 +1,6 @@
 .login-page {
   min-height: 100vh;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8) 0,
       rgba(0, 0, 0, 0.3) 60%,
@@ -117,7 +116,7 @@
 
 .login-divider::before,
 .login-divider::after {
-  content: '';
+  content: "";
   flex: 1;
   border-bottom: 1px solid #333;
 }

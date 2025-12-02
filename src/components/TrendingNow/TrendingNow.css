@@ -1,0 +1,37 @@
+.trending-section {
+  padding: 40px 50px;
+  background-color: #000;
+}
+
+.trending-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.trending-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.trending-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.trending-container::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.trending-container::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.trending-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

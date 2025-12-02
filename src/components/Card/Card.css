@@ -1,0 +1,72 @@
+.trending-card {
+  position: relative;
+  min-width: 150px;
+  height: 225px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.trending-card:hover {
+  transform: scale(1.05);
+}
+
+.card-number {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+
+.netflix-logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #e50914;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  z-index: 3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
